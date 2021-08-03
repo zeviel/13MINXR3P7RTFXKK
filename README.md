@@ -10,7 +10,7 @@ AminoReportFxck/Report Bot For Amino
 - pip install animalsay
 - pip install pyfiglet
 - apt install git
-- git clone https://github.com/LilZevi/AminoInviteBo
+- git clone https://github.com/LilZevi/AminoReportFxck
 - Для запуска/For starting
-- cd AminoInviteBo
-- python AminoInviteBo.py
+- cd AminoReportFxck
+- python AminoReportFxck.py
