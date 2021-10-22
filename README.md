@@ -6,7 +6,7 @@ AminoReportFxck/Report Bot For Amino
 - apt upgrade
 - pip install colored
 - pkg install python
-- pip install amino.py
+- pip install amino.fix
 - pip install animalsay
 - pip install pyfiglet
 - apt install git
