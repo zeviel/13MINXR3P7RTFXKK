@@ -3,7 +3,7 @@ import aminofix as amino
 
 def report_community(reason: str):
     client = amino.Client()
-    client.login(email=input("Email >>"), password=input("Password >> "))
+    client.login(email=input("Email >> "), password=input("Password >> "))
     community_info = client.get_from_code(input("Community Link >> "))
     com_Id = community_info.comId
     while True:
