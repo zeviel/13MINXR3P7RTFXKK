@@ -22,7 +22,7 @@ def report_user(reason: str):
     if select == "1":
         client = samino.Client(None)
         client.login(email=input("Email >>"), password=input("Password >> "))
-        user_Info = client.get_from_link(input("User Link >> "))
+        user_info = client.get_from_link(input("User Link >> "))
         object_Id = user_info.objectId
         com_Id = user_info.comId
         local = samino.Local(comId=com_Id)
