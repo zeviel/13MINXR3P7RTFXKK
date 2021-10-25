@@ -22,24 +22,23 @@ def report_user(reason: str):
     if select == "1":
         client = samino.Client(None)
         client.login(email=input("Email >>"), password=input("Password >> "))
-        user_info = client.get_from_link(input("User Link >> "))
-        object_Id = user_info.objectId
-        com_Id = user_info.comId
+        user_Info = client.get_from_link(input("User Link >> "))
+        object_Id = user_Info.objectId; com_Id = user_Info.comId
         local = samino.Local(comId=com_Id)
         while True:
             try:
                 local.flag(reason=reason, flagType=5, userId=object_Id)
                 print("Report Sended")
-            except:
-                print("Report Don't Sended")
-                pass
+            except Exception as e:
+                print(e)
+                
 
     elif select == "2":
         client = samino.Client(None)
         emails = open("emails.txt", "r")
         password = input("Password For All Accounts >> ")
         user_Info = client.get_from_link(input("User Link >> "))
-        object_Id = user_info.objectId; com_Id = user_info.comId
+        object_Id = user_Info.objectId; com_Id = user_Info.comId
         for line in emails:
             email = line.strip()
             try:
