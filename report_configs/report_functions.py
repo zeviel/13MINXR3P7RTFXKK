@@ -1,7 +1,7 @@
-import aminofix
+import amino
 
 def report_community(reason: str):
-    client = aminofix.Client()
+    client = amino.Client()
     client.login(email=input("Email >> "), password=input("Password >> "))
     community_info = client.get_from_code(input("Community Link >> "))
     com_Id = community_info.comId
@@ -20,11 +20,11 @@ def report_user(reason: str):
     select = input("Select >> ")
 
     if select == "1":
-        client = aminofix.Client()
+        client = amino.Client()
         client.login(email=input("Email >>"), password=input("Password >> "))
         user_Info = client.get_from_code(input("User Link >> "))
         object_Id = user_Info.objectId; com_Id = user_Info.comId
-        sub_client =  aminofix.SubClient(comId=com_Id, profile=client.profile)
+        sub_client =  amino.SubClient(comId=com_Id, profile=client.profile)
         while True:
             try:
                 sub_client.flag(reason=reason, flagType=5, userId=object_Id)
@@ -44,7 +44,7 @@ def report_user(reason: str):
             try:
                 client.login(email=email, password=password)
                 client.join_community(com_Id)
-                sub_client =  aminofix.SubClient(comId=com_Id, profile=client.profile)
+                sub_client =  amino.SubClient(comId=com_Id, profile=client.profile)
                 sub_client.flag(reason=reason, flagType=5, userId=object_Id)
                 print(f"{email} Sended Report")
             except Exception as e:
