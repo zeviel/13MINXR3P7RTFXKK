@@ -6,7 +6,7 @@ attr(0)
 print(fore.TURQUOISE_2 + style.BOLD)
 print("""Script by deluvsushi
 Github : https://github.com/deluvsushi""")
-print(pyfiglet.figlet_format("AminoReportFxck", font="small"))
+print(pyfiglet.figlet_format("13MINXR3P7RTFXKK", font="small"))
 say("cat", """[C] Report Community
 [U] Report User""")
 select = input("Select >> ")
