@@ -34,7 +34,7 @@ def report_user(reason: str):
                 
 
     elif select == "2":
-        client = aminofix.Client()
+        client = amino.Client()
         emails = open("emails.txt", "r")
         password = input("Password For All Accounts >> ")
         user_Info = client.get_from_code(input("User Link >> "))
