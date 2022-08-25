@@ -1,7 +1,8 @@
 # 13MINXR3P7RTFXKK
-Report Bot For Amino
+Report Bot for amino
 
-# Termux
+## Termux
+```shell
 - apt update
 - apt upgrade
 - pip install colored
@@ -9,8 +10,7 @@ Report Bot For Amino
 - pip install amino
 - pip install animalsay
 - pip install pyfiglet
-- apt install git
-- git clone https://github.com/deluvsushi/13MINXR3P7RTFXKK
-- Для запуска/For starting
+- git clone https://github.com/zeviel/13MINXR3P7RTFXKK
 - cd 13MINXR3P7RTFXKK
 - python 13MINXR3P7RTFXKK.py
+```
